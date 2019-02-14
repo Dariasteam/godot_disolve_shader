@@ -22,13 +22,9 @@ void fragment () {
 	float border_pass = cut_pass - 0.015;
 	
 	cut_pass = round(cut_pass);
-	cut_pass = min(cut_pass, 1);
-	cut_pass = max(cut_pass, 0);
 	ALPHA = cut_pass;
 		
 	border_pass = round (border_pass);
-	border_pass = min (border_pass, 1);
-	border_pass = max (border_pass, 0);
 	border_pass = 1.0 - border_pass;
 	
 	vec3 final_border = vec3(border_pass); 

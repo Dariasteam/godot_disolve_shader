@@ -18,7 +18,7 @@ metallic = 0.35
 [sub_resource type="ShaderMaterial" id=4]
 
 shader = ExtResource( 1 )
-shader_param/color = Vector3( 0, 0, 100 )
+shader_param/color = Vector3( 0.5, 0.5, 100 )
 shader_param/velocity_factor = 1.0
 shader_param/noise_text = ExtResource( 2 )
 
@@ -77,6 +77,7 @@ transform = Transform( 1, 0, 0, 0, 0.921932, 0.387351, 0, -0.387351, 0.921932, 0
 environment = ExtResource( 4 )
 
 [node name="GIProbe" type="GIProbe" parent="."]
+visible = false
 subdiv = 0
 extents = Vector3( 4.31664, 2.70201, 3.97402 )
 energy = 0.86
