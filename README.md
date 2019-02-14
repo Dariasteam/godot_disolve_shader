@@ -1,4 +1,4 @@
-# Zelda BOTW disolve like shader for Godot Engine 3.1
+# Zelda BOTW like disolve shader for Godot Engine 3.1
 
 ![](shader.gif)
 
