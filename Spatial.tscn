@@ -1,36 +1,30 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://disolve_shader_code.tres" type="Shader" id=1]
+[ext_resource path="res://dissolve_controllable.shader" type="Shader" id=1]
 [ext_resource path="res://new_noisetexture.tres" type="Texture" id=2]
 [ext_resource path="res://disolve_shader_visual.tres" type="Shader" id=3]
 [ext_resource path="res://default_env.tres" type="Environment" id=4]
 
 [sub_resource type="PlaneMesh" id=1]
 
-
 [sub_resource type="SpatialMaterial" id=2]
-
 metallic = 0.35
 
 [sub_resource type="CubeMesh" id=3]
 
-
 [sub_resource type="ShaderMaterial" id=4]
-
 shader = ExtResource( 1 )
 shader_param/color = Vector3( 0.5, 0.5, 100 )
 shader_param/velocity_factor = 1.0
+shader_param/dissolve_amount = 1.0
 shader_param/noise_text = ExtResource( 2 )
 
 [sub_resource type="SphereMesh" id=5]
 
-
 [sub_resource type="ShaderMaterial" id=6]
-
 shader = ExtResource( 3 )
 
 [sub_resource type="GIProbeData" id=7]
-
 bounds = AABB( -4.31664, -2.70201, -3.97402, 8.63328, 5.40402, 7.94804 )
 cell_size = 0.134895
 to_cell_xform = Transform( 7.41317, 0, 0, 0, 7.41317, 0, 0, 0, 7.41317, 32, 20.0305, 29.4601 )
@@ -82,4 +76,3 @@ subdiv = 0
 extents = Vector3( 4.31664, 2.70201, 3.97402 )
 energy = 0.86
 data = SubResource( 7 )
-
